@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valentine's day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="index">
+        <div>
+            <div class="image-container" onclick="openPopup()">
+                <img src="./images.png" class="note">
+            </div>
+            <p class="Pop" onclick="openPopup()" >Pls Click My note !</p>
+        </div>
+
+        <div class="bg-pop">
+            <div class="popup" id="popup" onclick="ClosePopup()">
+                <p class="header" onclick="ClosePopup()">  When someone else's happiness is your happiness. 
+                    That is love. May your Valentine's Day be filled. Happy Valentine's Day.</p>
+                <p class="text" onclick="ClosePopup()">    เมื่อความสุขของใครสักคนเป็นความสุขของคุณด้วย นั่นคือความรัก 
+                    ขอให้วาเลนไทน์ของคุณเต็มไปด้วยความรัก สุขสันต์วันวาเลนไทน์นะครับบ</p>
+                <a href="https://www.youtube.com/watch?v=IpFX2vq8HKw">มอบเพลงนี้ให้</a>
+            </div>
+        </div>
+    </div>
+    <script>
+    function openPopup() {
+        document.getElementById("popup").classList.add("active");
+    }
+    
+    function ClosePopup() {
+        document.getElementById("popup").classList.remove("active");
+    }</script>
+</body>
+</html>
